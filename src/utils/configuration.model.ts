@@ -11,6 +11,7 @@ export interface DropTargetOptions {
   capture?: 'user' | 'environment';
   multiple?: boolean;
   disableMultipart?: boolean;
+  uploadBlob?: boolean;
 }
 
 export interface LoggerOptions {
@@ -28,6 +29,7 @@ export interface InputFileOptions {
   capture?: 'user' | 'environment';
   multiple?: boolean;
   disableMultipart?: boolean;
+  uploadBlob?: boolean;
 }
 
 export const NGX_DROP_TARGET_OPTIONS = new InjectionToken<DropTargetOptions>(
@@ -43,6 +45,7 @@ export const ngxDropTargetOptions: DropTargetOptions = {
   colorDrop: '',
   multiple: true,
   disableMultipart: false,
+  uploadBlob: false,
 };
 
 export const ngxloggerOptions: LoggerOptions = {
@@ -53,4 +56,5 @@ export const ngxloggerOptions: LoggerOptions = {
 export const ngxInputFileOptions: InputFileOptions = {
   multiple: true,
   disableMultipart: false,
+  uploadBlob: false,
 };
