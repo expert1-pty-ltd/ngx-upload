@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="10.0.3"></a>
+## [10.0.3](https://github.com/expert1-pty-ltd/ngx-upload/compare/v10.0.2...v10.0.3) (2020-05-01)
+
+
+
 <a name="10.0.2"></a>
 ## [10.0.2](https://github.com/expert1-pty-ltd/ngx-upload/compare/v10.0.1...v10.0.2) (2020-05-01)
 
