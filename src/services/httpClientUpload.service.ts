@@ -170,7 +170,7 @@ export class HttpClientUploadService {
 
         resolve(sendable);
       });
-    } else if (fileItem.uploadBlob) {
+    } else if (!fileItem.disableMultipart && fileItem.uploadBlob) {
       promise = new Promise<any>((resolve, reject) => {
         const reader = new FileReader();
         reader.addEventListener('load', (event) => {
