@@ -2,8 +2,13 @@
 
 [![Build Status](https://travis-ci.org/wKoza/ngx-upload.svg)](https://travis-ci.org/wKoza/ngx-upload)
 [![codecov](https://codecov.io/gh/wKoza/ngx-upload/branch/master/graph/badge.svg)](https://codecov.io/gh/wKoza/ngx-upload)
-[![npm version](https://badge.fury.io/js/%40wkoza%2Fngx-upload.svg)](https://badge.fury.io/js/%40wkoza%2Fngx-upload)
+[![npm version](https://badge.fury.io/js/%40expert1-pty-ltd%2Fngx-upload.svg)](https://badge.fury.io/js/%40expert1-pty-ltd%2Fngx-upload)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/wKoza/ngx-upload/master/LICENSE)
+
+Based on wKoza's ngx-upload [package](https://github.com/wKoza/ngx-upload).
+
+- allowed uploads using PUT
+- allowed MIME type filter '', some files don't have their MIME types detected in Javascript
 
 ## Demo
 
@@ -77,7 +82,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {
   NgxUploadModule,
-  MineTypeEnum,
+  MimeTypeEnum,
   DropTargetOptions,
 } from '@wkoza/ngx-upload';
 
@@ -86,7 +91,7 @@ export const ngxDropTargetOptions: DropTargetOptions = {
   colorDrag: 'dropZoneColorDrag',
   colorDrop: 'dropZoneColorDrop',
   multiple: true,
-  accept: [MineTypeEnum.Image, MineTypeEnum.Application_Pdf],
+  accept: [MimeTypeEnum.Image, MimeTypeEnum.Application_Pdf],
 };
 
 @NgModule({
@@ -194,7 +199,7 @@ and with Material
 ```typescript
 optionsInput: InputFileOptions = {
   multiple: true,
-  accept: [MineTypeEnum.Image, MineTypeEnum.Application_Pdf],
+  accept: [MimeTypeEnum.Image, MimeTypeEnum.Application_Pdf],
 };
 ```
 

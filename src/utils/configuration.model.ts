@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { MineTypeEnum } from './mimetype.model';
+import { MimeTypeEnum } from './mimetype.model';
 
 export type Method = 'POST' | 'GET' | 'PUT';
 
@@ -7,7 +7,7 @@ export interface DropTargetOptions {
   color: string;
   colorDrag: string;
   colorDrop: string;
-  accept?: MineTypeEnum[];
+  accept?: MimeTypeEnum[];
   capture?: 'user' | 'environment';
   multiple?: boolean;
   disableMultipart?: boolean;
@@ -24,7 +24,7 @@ export interface UploadEndPoint {
 }
 
 export interface InputFileOptions {
-  accept?: MineTypeEnum[];
+  accept?: MimeTypeEnum[];
   capture?: 'user' | 'environment';
   multiple?: boolean;
   disableMultipart?: boolean;

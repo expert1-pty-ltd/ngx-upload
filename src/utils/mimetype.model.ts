@@ -1,4 +1,4 @@
-export const enum MineTypeEnum {
+export const enum MimeTypeEnum {
   All = '*',
   Application = 'application/*',
   Application_AtomXml = 'application/atom+xml',
@@ -76,6 +76,7 @@ export const enum MineTypeEnum {
   Image_SvgXml = 'image/svg+xml',
   Image_Tiff = 'image/tiff',
   Image_Webp = 'image/webp',
+  None = '',
   Text = 'text/*',
   Text_Css = 'text/css',
   Text_Csv = 'text/csv',
@@ -91,6 +92,5 @@ export const enum MineTypeEnum {
   Video_Mpeg = 'video/mpeg',
   Video_Ogg = 'video/ogg',
   Video_Quicktime = 'video/quicktime',
-  Video_Webm = 'video/webm'
+  Video_Webm = 'video/webm',
 }
-
