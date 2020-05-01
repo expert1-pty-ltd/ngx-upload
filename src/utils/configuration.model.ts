@@ -1,7 +1,7 @@
 import { InjectionToken } from '@angular/core';
 import { MineTypeEnum } from './mimetype.model';
 
-export type Method = 'POST' | 'GET';
+export type Method = 'POST' | 'GET' | 'PUT';
 
 export interface DropTargetOptions {
   color: string;
@@ -30,24 +30,27 @@ export interface InputFileOptions {
   disableMultipart?: boolean;
 }
 
-export const NGX_DROP_TARGET_OPTIONS = new InjectionToken<DropTargetOptions>('Ngx drop Zone Options');
-export const NGX_LOGGER_OPTIONS = new InjectionToken<LoggerOptions>('Ngx Logger Options');
-
+export const NGX_DROP_TARGET_OPTIONS = new InjectionToken<DropTargetOptions>(
+  'Ngx drop Zone Options'
+);
+export const NGX_LOGGER_OPTIONS = new InjectionToken<LoggerOptions>(
+  'Ngx Logger Options'
+);
 
 export const ngxDropTargetOptions: DropTargetOptions = {
   color: '',
   colorDrag: '',
   colorDrop: '',
   multiple: true,
-  disableMultipart: false
+  disableMultipart: false,
 };
 
 export const ngxloggerOptions: LoggerOptions = {
   enabled: false,
-  debug: true
+  debug: true,
 };
 
 export const ngxInputFileOptions: InputFileOptions = {
   multiple: true,
-  disableMultipart: false
+  disableMultipart: false,
 };
