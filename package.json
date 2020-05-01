@@ -1,6 +1,6 @@
 {
   "name": "@expert1-pty-ltd/ngx-upload",
-  "version": "9.0.0",
+  "version": "1.0.0",
   "description": "Upload module for Angular",
   "sideEffects": false,
   "ngPackage": {
@@ -33,9 +33,9 @@
   "author": "William Koza <william.koza@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wKoza/ngx-upload/issues"
+    "url": "https://github.com/expert1-pty-ltd/ngx-upload/issues"
   },
-  "homepage": "https://github.com/wKoza/ngx-upload#readme",
+  "homepage": "https://github.com/expert1-pty-ltd/ngx-upload#readme",
   "devDependencies": {
     "@angular/common": "9.0.7",
     "@angular/compiler": "9.0.7",
