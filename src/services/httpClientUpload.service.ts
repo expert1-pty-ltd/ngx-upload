@@ -163,7 +163,7 @@ export class HttpClientUploadService {
       resolve();
     });
 
-    if (!fileItem.disableMultipart) {
+    if (!fileItem.disableMultipart && !fileItem.uploadBlob) {
       promise = new Promise<any>((resolve, reject) => {
         const sendable = item.formData;
         sendable.append(item.alias, item.file, item.file.name);
