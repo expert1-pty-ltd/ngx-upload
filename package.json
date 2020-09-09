@@ -1,6 +1,6 @@
 {
   "name": "@expert1-pty-ltd/ngx-upload",
-  "version": "10.0.4",
+  "version": "10.0.5",
   "description": "Upload module for Angular",
   "sideEffects": false,
   "ngPackage": {
